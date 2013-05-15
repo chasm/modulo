@@ -7,6 +7,9 @@ require 'rspec/autorun'
 require 'capybara/rails'
 require 'capybara/rspec'
 require 'database_cleaner'
+require 'capybara/webkit'
+
+Capybara.javascript_driver = :webkit
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 

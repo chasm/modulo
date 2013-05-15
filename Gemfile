@@ -13,6 +13,7 @@ gem 'bcrypt-ruby'
 group :development, :test do
   gem "rspec-rails"
   gem "capybara"
+  gem "capybara-webkit"
   gem "better_errors"
   gem "binding_of_caller"
   gem "meta_request"
@@ -20,6 +21,7 @@ group :development, :test do
   gem "pry"
   gem "launchy"
   gem "database_cleaner"
+  gem "rack-test", require: "rack/test"
 end
 
 group :assets do
